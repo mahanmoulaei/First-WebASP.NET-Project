@@ -11,7 +11,15 @@ namespace WebASP.NET
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            panelPrice.Visible = false;
+            panelOrder.Visible = false;
 
+            if (!Page.IsPostBack)
+            {
+                labelAddress.Visible = false;
+                textAddress.Visible = false;
+
+            }
         }
     }
 }

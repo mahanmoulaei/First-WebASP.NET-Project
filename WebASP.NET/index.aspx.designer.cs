@@ -168,12 +168,66 @@ namespace WebASP.NET
         protected global::System.Web.UI.WebControls.Label labelPizzaCrust;
 
         /// <summary>
-        /// checkboxlistPizzaCrust control.
+        /// radiobuttonlistPizzaCrust control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList checkboxlistPizzaCrust;
+        protected global::System.Web.UI.WebControls.RadioButtonList radiobuttonlistPizzaCrust;
+
+        /// <summary>
+        /// panelPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelPrice;
+
+        /// <summary>
+        /// imageLogo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imageLogo;
+
+        /// <summary>
+        /// literalPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal literalPrice;
+
+        /// <summary>
+        /// buttonOrderNow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonOrderNow;
+
+        /// <summary>
+        /// panelOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelOrder;
+
+        /// <summary>
+        /// literalOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal literalOrder;
     }
 }

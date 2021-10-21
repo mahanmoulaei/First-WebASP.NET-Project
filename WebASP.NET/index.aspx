@@ -65,6 +65,11 @@
             border-radius:15px;
         }
 
+        .auto-style15 {
+            margin-top:0px;
+            border-radius:15px;
+        }
+
 
     </style>
 </head>
@@ -144,7 +149,7 @@
                                     </td>
 
                                     <td class="auto-style6">
-                                        <asp:CheckBoxList ID="checkboxlistPizzaToppings" runat="server" OnCheckedChanged="checkboxlistPizzaToppings_Changed" AutoPostBack="true"></asp:CheckBoxList>
+                                        <asp:CheckBoxList ID="checkboxlistPizzaToppings" runat="server" OnSelectedIndexChanged="checkboxlistPizzaToppings_Changed" AutoPostBack="true"></asp:CheckBoxList>
                                     </td>
                                 </tr>
 
@@ -154,15 +159,37 @@
                                     </td>
 
                                     <td class="auto-style6">
-                                        <asp:CheckBoxList ID="checkboxlistPizzaCrust" runat="server" OnCheckedChanged="checkboxlistPizzaCrust_Changed" AutoPostBack="true"></asp:CheckBoxList>
+                                        <asp:RadioButtonList ID="radiobuttonlistPizzaCrust" runat="server" OnSelectedIndexChanged="radiobuttonlistPizzaCrust_Changed" AutoPostBack="true"></asp:RadioButtonList>
                                     </td>
-                                </tr>
-                           
+                                </tr>                          
                                 </table>
                         </asp:Panel>
                     </td>
+
+                    <td class="auto-style12">
+                        <asp:Panel ID="panelPrice" CssClass="stylePanel" BackColor="#ff9900" runat="server" GroupingText="Price" Height="250px" Width="250px">
+                            <asp:Image ID="imageLogo" runat="server" ImageUrl="~/logo.png" Height="80px" Width="90px" CssClass="auto-style5"/>
+                            <%--Literal is used to show text. Passes the content directly to client's browser.--%>
+                            <asp:Literal ID="literalPrice" runat="server"></asp:Literal>
+                            <asp:Button ID="buttonOrderNow" runat="server" Text="Order Now" OnClick="buttonOrderNow_Click"/>
+                        </asp:Panel>
+
+                        <br />
+
+                        <asp:Panel ID="panelOrder" CssClass="stylePanel" BackColor="#ff9900" runat="server" GroupingText="Price">
+                            <%--Literal is used to show text. Passes the content directly to client's browser.--%>
+                            <asp:Literal ID="literalOrder" runat="server"></asp:Literal>
+                        </asp:Panel>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
                 </tr>
             </table>
+            <br />
         </div>
     </form>
 </body>
