@@ -129,7 +129,9 @@
                                     </td>
 
                                     <td class="auto-style6">
-                                        <asp:DropDownList ID="dropdownPizza" runat="server" Width="200px" CssClass="stylePanel" OnSelectedIndexChanged="dropdownPizza_Changed" AutoPostBack="true"></asp:DropDownList>
+                                        <asp:DropDownList ID="dropdownPizza" runat="server" Width="200px" OnSelectedIndexChanged="dropdownPizza_Changed" AutoPostBack="true">
+                                            <asp:ListItem>Select Pizza...</asp:ListItem>
+                                        </asp:DropDownList>
                                     </td>
                                 </tr>
 
@@ -139,7 +141,7 @@
                                     </td>
 
                                     <td class="auto-style6">
-                                        <asp:ListBox ID="listPizzaSize" runat="server" Width="200px" CssClass="stylePanel" OnSelectedIndexChanged="listPizzaSize_Changed" AutoPostBack="true"></asp:ListBox>
+                                        <asp:ListBox ID="listPizzaSize" runat="server" Width="200px" OnSelectedIndexChanged="listPizzaSize_Changed" AutoPostBack="true"></asp:ListBox>
                                     </td>
                                 </tr>
 
